@@ -1,0 +1,20 @@
+[
+  {
+    "id": "rights-101",
+    "title": "Your Fundamental Rights",
+    "summary": "Overview of constitutional rights every citizen should know.",
+    "content": "Citizens have rights such as freedom of speech, equality before law, and protection from discrimination. This lesson explains the basics and how to claim these rights."
+  },
+  {
+    "id": "consumer-rights",
+    "title": "Consumer Protection Basics",
+    "summary": "How to handle faulty goods, refunds, and consumer courts.",
+    "content": "If a product is defective, you have the right to file a complaint, request a replacement or refund, and approach consumer forums. Keep receipts and document communications."
+  },
+  {
+    "id": "safety-online",
+    "title": "Online Safety & Privacy",
+    "summary": "Protecting personal data and recognizing scams.",
+    "content": "Learn practical steps to protect your data online, recognise phishing, and report cybercrime to relevant authorities."
+  }
+]
