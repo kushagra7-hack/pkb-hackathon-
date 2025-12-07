@@ -1,0 +1,56 @@
+STDOUT:
+
+> legal-literacy-next15@1.0.0 build
+> next build
+
+   ▲ Next.js 15.5.7
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 3.2s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating static pages (2/9) 
+   Generating static pages (4/9) 
+   Generating static pages (6/9) 
+ ✓ Generating static pages (9/9)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                    40.4 kB         146 kB
+├ ○ /_not-found                            992 B         103 kB
+├ ƒ /api/quiz                              126 B         102 kB
+├ ○ /community                             126 B         102 kB
+├ ○ /dashboard                           1.03 kB         103 kB
+├ ○ /learn                                 460 B         102 kB
+├ ƒ /lesson/[id]                           735 B         106 kB
+└ ƒ /quiz                                1.96 kB         104 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-47484af636b98715.js       45.8 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.99 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+
+STDERR:
+(node:29568) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/nyay-jagat/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to D:\nyay-jagat\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:25560) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/nyay-jagat/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to D:\nyay-jagat\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16328) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/nyay-jagat/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to D:\nyay-jagat\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3128) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/nyay-jagat/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to D:\nyay-jagat\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

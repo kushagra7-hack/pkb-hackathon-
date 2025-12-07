@@ -1,0 +1,245 @@
+/* styles/Home.module.css */
+
+.container {
+    --bg-color: #f8f9fa;
+    --text-color: #1a1a1a;
+    --primary-color: #3b82f6;
+    /* Blue */
+    --accent-color: #8b5cf6;
+    /* Violet */
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.searchBox {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 1rem;
+    box-shadow: var(--shadow-md);
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.searchLabel {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f3f4f6;
+    border-radius: var(--radius-lg);
+    padding: 0.75rem 1rem;
+}
+
+.searchInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    color: var(--text-color);
+}
+
+.voiceIcon {
+    cursor: pointer;
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+
+.examples {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: #888;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.analyzeBtn {
+    margin-top: 1.5rem;
+    background: var(--text-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.analyzeBtn:hover {
+    transform: scale(1.02);
+}
+
+/* Section Dividers */
+.sectionTitle {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #9ca3af;
+    letter-spacing: 0.05em;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sectionTitle::before,
+.sectionTitle::after {
+    content: "";
+    height: 1px;
+    width: 50px;
+    background: #e5e7eb;
+}
+
+/* Topic Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.cardIcon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.cardTitle {
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    display: block;
+    min-height: 2.4em;
+}
+
+.learnLink {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Games Section */
+.gameGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.gameCard {
+    background: linear-gradient(135deg, #4f46e5, #ec4899);
+    color: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.gameCard:nth-child(2) {
+    background: linear-gradient(135deg, #059669, #3b82f6);
+}
+
+.gameTitle {
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.gameDesc {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Stats Footer */
+.stats {
+    background: var(--text-color);
+    color: white;
+    border-radius: var(--radius-xl);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
