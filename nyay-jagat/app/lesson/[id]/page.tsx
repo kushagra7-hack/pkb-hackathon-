@@ -34,7 +34,7 @@ export default async function LessonPage({ params }: PageProps) {
           </div>
 
           <div className="mt-12">
-            <QuizClient lessonId={lesson.id} />
+            <QuizClient lessonId={lesson.id} questions={lesson.quiz || []} />
           </div>
         </article>
       </div>

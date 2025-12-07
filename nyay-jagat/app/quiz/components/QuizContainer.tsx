@@ -31,8 +31,12 @@ export default function QuizContainer({ initialSection = 'mcq' }) {
         fetchData()
     }, [])
 
-    if (loading) return <div className="text-center p-8">Loading quiz data...</div>
-    if (!quizData) return <div className="text-center p-8">Failed to load quiz data.</div>
+    if (loading) return (
+        <div className="flex justify-center items-center min-h-[50vh]">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+        </div>
+    )
+    if (!quizData) return <div className="text-center p-8 text-red-400">Failed to load quiz data.</div>
 
     const getCurrentQuestion = () => {
         switch (currentSection) {
@@ -76,17 +80,22 @@ export default function QuizContainer({ initialSection = 'mcq' }) {
     return (
         <div className="max-w-4xl mx-auto">
             {/* Header */}
-            <div className="bg-white rounded-t-2xl shadow-lg p-6 quiz-gradient text-white">
-                <h1 className="text-3xl font-bold text-center mb-2">
+            <div className="glass-card rounded-2xl p-8 mb-8 relative overflow-hidden border border-white/10">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-blue-500 to-purple-600"></div>
+                <h1 className="text-4xl font-black text-center mb-2 text-white tracking-tight">
                     Legal Awareness Quiz
                 </h1>
-                <p className="text-center text-lg opacity-90">
-                    Section: {currentSection.toUpperCase()} | Question {currentIndex + 1}
-                </p>
+                <div className="flex justify-center items-center gap-4 mt-4 text-slate-400">
+                    <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm font-medium uppercase tracking-wider">
+                        {currentSection.toUpperCase()}
+                    </span>
+                    <span className="w-1 h-1 rounded-full bg-slate-600"></span>
+                    <span className="text-sm font-medium">Question {currentIndex + 1}</span>
+                </div>
             </div>
 
             {/* Quiz Body */}
-            <div className="bg-white rounded-b-2xl shadow-lg p-8 mb-6">
+            <div className="glass-card rounded-2xl p-8 md:p-10 border border-white/10 relative">
                 {currentSection === 'mcq' && (
                     <MCQQuestion
                         question={currentQuestion}
@@ -123,15 +132,16 @@ export default function QuizContainer({ initialSection = 'mcq' }) {
                 )}
 
                 {/* Navigation */}
-                <div className="mt-8 flex justify-between items-center">
-                    <div className="text-gray-600">
-                        Score: {score} / 50
+                <div className="mt-10 pt-8 border-t border-white/10 flex justify-between items-center">
+                    <div className="text-slate-400 font-medium">
+                        Score: <span className="text-primary font-bold">{score}</span> / 50
                     </div>
                     <button
                         onClick={handleNext}
-                        className="px-8 py-3 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white font-bold rounded-lg hover:scale-105 transition-transform"
+                        className="group relative px-6 py-3 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all flex items-center gap-2"
                     >
-                        Next Question →
+                        Next Question
+                        <span className="group-hover:translate-x-1 transition-transform">→</span>
                     </button>
                 </div>
             </div>

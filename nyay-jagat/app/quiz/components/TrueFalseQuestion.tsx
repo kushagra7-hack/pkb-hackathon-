@@ -7,17 +7,17 @@ export default function TrueFalseQuestion({
 }) {
     return (
         <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+            <h2 className="text-2xl font-bold text-white mb-8 leading-relaxed">
                 {question.statement}
             </h2>
 
-            <div className="flex gap-4 justify-center">
+            <div className="flex gap-6 justify-center">
                 <button
                     onClick={() => !showAnswer && onSelect(true)}
                     disabled={showAnswer}
-                    className={`flex-1 max-w-xs p-6 text-xl font-bold rounded-xl border-3 transition-all ${showAnswer && question.correctAnswer
-                        ? 'bg-green-100 border-green-500 text-green-700'
-                        : 'bg-green-50 border-green-200 text-green-600 hover:bg-green-100'
+                    className={`flex-1 max-w-xs p-8 text-xl font-bold rounded-2xl border transition-all duration-300 transform hover:scale-105 ${showAnswer && question.correctAnswer
+                            ? 'bg-green-500/20 border-green-500 text-green-400 shadow-[0_0_30px_rgba(34,197,94,0.3)]'
+                            : 'bg-green-900/10 border-green-500/30 text-green-500 hover:bg-green-500/20 hover:border-green-500'
                         }`}
                 >
                     ✓ TRUE
@@ -26,9 +26,9 @@ export default function TrueFalseQuestion({
                 <button
                     onClick={() => !showAnswer && onSelect(false)}
                     disabled={showAnswer}
-                    className={`flex-1 max-w-xs p-6 text-xl font-bold rounded-xl border-3 transition-all ${showAnswer && !question.correctAnswer
-                        ? 'bg-red-100 border-red-500 text-red-700'
-                        : 'bg-red-50 border-red-200 text-red-600 hover:bg-red-100'
+                    className={`flex-1 max-w-xs p-8 text-xl font-bold rounded-2xl border transition-all duration-300 transform hover:scale-105 ${showAnswer && !question.correctAnswer
+                            ? 'bg-red-500/20 border-red-500 text-red-400 shadow-[0_0_30px_rgba(239,68,68,0.3)]'
+                            : 'bg-red-900/10 border-red-500/30 text-red-500 hover:bg-red-500/20 hover:border-red-500'
                         }`}
                 >
                     ✗ FALSE
@@ -36,8 +36,10 @@ export default function TrueFalseQuestion({
             </div>
 
             {showAnswer && (
-                <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
-                    <p className="font-semibold text-blue-800">
+                <div className="mt-8 p-6 bg-blue-500/10 border border-blue-500/20 rounded-xl relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                    <p className="font-bold text-blue-500 mb-2 uppercase text-xs tracking-wider">Fact Check</p>
+                    <p className="text-blue-200/90 leading-relaxed">
                         {question.explanation}
                     </p>
                 </div>

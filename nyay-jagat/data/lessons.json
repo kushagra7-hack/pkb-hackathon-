@@ -3,18 +3,227 @@
     "id": "rights-101",
     "title": "Your Fundamental Rights",
     "summary": "Overview of constitutional rights every citizen should know.",
-    "content": "Citizens have rights such as freedom of speech, equality before law, and protection from discrimination. This lesson explains the basics and how to claim these rights."
+    "content": "Citizens have rights such as freedom of speech, equality before law, and protection from discrimination. This lesson explains the basics and how to claim these rights.",
+    "quiz": [
+      {
+        "q": "Which article guarantees Freedom of Speech?",
+        "a": [
+          "Article 19",
+          "Article 21",
+          "Article 14"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Can Fundamental Rights be suspended during an emergency?",
+        "a": [
+          "Yes",
+          "No",
+          "Only some"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Which Article of the Indian Constitution guarantees the Right to Life and Personal Liberty?",
+        "a": [
+          "Article 14",
+          "Article 19",
+          "Article 21",
+          "Article 32"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Under which Article is untouchability abolished and its practice forbidden?",
+        "a": [
+          "Article 15",
+          "Article 17",
+          "Article 23",
+          "Article 25"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "How many freedoms are guaranteed under Article 19 of the Constitution?",
+        "a": [
+          "Four",
+          "Five",
+          "Six",
+          "Seven"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "What is the minimum age below which children cannot be employed in hazardous work according to Article 24?",
+        "a": [
+          "12 years",
+          "14 years",
+          "16 years",
+          "18 years"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Which Article is called the \"heart and soul\" of the Constitution as it provides remedies for enforcement of fundamental rights?",
+        "a": [
+          "Article 21",
+          "Article 32",
+          "Article 14",
+          "Article 19"
+        ],
+        "ans": 1
+      }
+    ]
   },
   {
     "id": "consumer-rights",
     "title": "Consumer Protection Basics",
     "summary": "How to handle faulty goods, refunds, and consumer courts.",
-    "content": "If a product is defective, you have the right to file a complaint, request a replacement or refund, and approach consumer forums. Keep receipts and document communications."
+    "content": "If a product is defective, you have the right to file a complaint, request a replacement or refund, and approach consumer forums. Keep receipts and document communications.",
+    "quiz": [
+      {
+        "q": "What is the standard mark for gold jewelry in India?",
+        "a": [
+          "ISI",
+          "Agmark",
+          "Hallmark"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Can you file a consumer complaint online?",
+        "a": [
+          "Yes",
+          "No"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "How many fundamental consumer rights are recognized under the Consumer Protection Act?",
+        "a": [
+          "Four",
+          "Five",
+          "Six",
+          "Eight"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "What is the National Consumer Helpline number?",
+        "a": [
+          "1800-11-4000",
+          "1930",
+          "1098",
+          "100"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Which consumer right ensures protection against goods that are hazardous to life and property?",
+        "a": [
+          "Right to Information",
+          "Right to Safety",
+          "Right to Choose",
+          "Right to Seek Redressal"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Which consumer right allows you to claim compensation for defective products or deficient services?",
+        "a": [
+          "Right to be Heard",
+          "Right to Choose",
+          "Right to Seek Redressal",
+          "Right to Consumer Education"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "What information must manufacturers provide on product labels as part of consumer's Right to Information?",
+        "a": [
+          "Price only",
+          "Manufacturing date only",
+          "Quality, quantity, price, and expiry date",
+          "Only brand name"
+        ],
+        "ans": 2
+      }
+    ]
   },
   {
     "id": "safety-online",
     "title": "Online Safety & Privacy",
     "summary": "Protecting personal data and recognizing scams.",
-    "content": "Learn practical steps to protect your data online, recognise phishing, and report cybercrime to relevant authorities."
+    "content": "Learn practical steps to protect your data online, recognise phishing, and report cybercrime to relevant authorities.",
+    "quiz": [
+      {
+        "q": "What should you do if you receive a suspicious link?",
+        "a": [
+          "Click it",
+          "Ignore/Delete it",
+          "Forward it"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Is it safe to share your OTP with bank officials?",
+        "a": [
+          "Yes",
+          "No, never",
+          "Sometimes"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Which portal should you use to report cybercrimes in India?",
+        "a": [
+          "police.gov.in",
+          "cybercrime.gov.in",
+          "complaint.gov.in",
+          "safety.gov.in"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "What is the Cyber Crime Helpline number for reporting financial frauds?",
+        "a": [
+          "100",
+          "1098",
+          "1930",
+          "112"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Under the Digital Personal Data Protection Act 2023, within how many hours must organizations report data breaches?",
+        "a": [
+          "24 hours",
+          "48 hours",
+          "72 hours",
+          "96 hours"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "What does HTTPS in a website address indicate?",
+        "a": [
+          "High-speed connection",
+          "Secure, encrypted connection",
+          "Government website",
+          "Free website"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Which of the following should you NEVER share with anyone?",
+        "a": [
+          "Your email address",
+          "Your OTP (One-Time Password)",
+          "Your phone number",
+          "Your name"
+        ],
+        "ans": 1
+      }
+    ]
   }
 ]
